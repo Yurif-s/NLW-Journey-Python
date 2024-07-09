@@ -2,5 +2,3 @@
 .pytest_cache
 venv
 .env
-links_repository.py
-links_repository_test.py
