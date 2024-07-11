@@ -23,8 +23,8 @@ from src.controllers.link_finder import LinkFinder
 from src.models.repositories.trips_repository import TripsRepository
 from src.models.repositories.emails_to_invite_repository import EmailsToInviteRepository
 from src.models.repositories.links_repository import LinksRepository
-# from src.models.repositories.participants_repository import ParticipantsRepository
-# from src.models.repositories.activities_repository import ActivitiesRepository
+from src.models.repositories.participants_repository import ParticipantsRepository
+from src.models.repositories.activities_repository import ActivitiesRepository
 
 # Importando o gerente de conexões
 
