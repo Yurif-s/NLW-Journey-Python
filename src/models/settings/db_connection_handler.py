@@ -3,7 +3,7 @@ from sqlite3 import Connection
 
 class DbConnectionHandler:
     def __init__(self) -> None:
-        self.__connection_string = 'storage.db'
+        self.__connection_string = "storage.db"
         self.__conn = None
 
     def connect(self) -> None:
@@ -12,5 +12,5 @@ class DbConnectionHandler:
 
     def get_connection(self) -> Connection:
         return self.__conn
-    
+
 db_connection_handler = DbConnectionHandler()
