@@ -11,12 +11,12 @@ from src.controllers.trip_confirmer import TripConfirmer
 from src.controllers.link_creator import LinkCreator
 from src.controllers.link_finder import LinkFinder
 
-# from src.controllers.participant_creator import ParticipantCreator
-# from src.controllers.participant_finder import ParticipantFinder
-# from src.controllers.participant_confirmer import ParticipantConfirmer
+from src.controllers.participant_creator import ParticipantCreator
+from src.controllers.participant_finder import ParticipantFinder
+from src.controllers.participant_confirmer import ParticipantConfirmer
 
-# from src.controllers.activity_creator import ActivityCreator
-# from src.controllers.activity_finder import ActivityFinder
+from src.controllers.activity_creator import ActivityCreator
+from src.controllers.activity_finder import ActivityFinder
 
 # Importação de Repositorios
 
@@ -81,7 +81,7 @@ def find_trip_link(tripId):
     response = controller.find(tripId)
 
     return jsonify(response["body"]), response["status_code"]
-"""
+
 @trips_routes_bp.route("/trips/<tripId>/invites", methods=["POST"])
 def invite_to_trip(tripId):
     conn = db_connection_handler.get_connection()
@@ -131,4 +131,4 @@ def confirm_participant(participantId):
 
     response = controller.confirm(participantId)
 
-    return jsonify(response["body"]), response["status_code"]"""
+    return jsonify(response["body"]), response["status_code"]
